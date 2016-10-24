@@ -1,0 +1,27 @@
+{
+  "name": "global_node_module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbminimalistics/global_node_module.git"
+  },
+  "author": "sbm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sbminimalistics/global_node_module/issues"
+  },
+  "homepage": "https://github.com/sbminimalistics/global_node_module#readme",
+  "preferGlobal": true,
+  "bin": {
+    "global_node_module": "index.js"
+  },
+  "dev-dependencies": {
+    "img-tinyfy": "^1.1.8",
+    "underscore": "^1.8.3"
+  }
+}
