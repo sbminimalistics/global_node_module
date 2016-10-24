@@ -20,8 +20,8 @@
   "bin": {
     "global_node_module": "index.js"
   },
-  "dev-dependencies": {
-    "img-tinyfy": "^1.1.8",
+  "devDependencies": {
+    "colors": "^1.1.2",
     "underscore": "^1.8.3"
   }
 }
