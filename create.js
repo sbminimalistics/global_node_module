@@ -14,14 +14,12 @@ console.log("filePath:"+filePath);
 
 var fs = require("fs");
 fs.open(filePath, "wx", function (err, fd) {
-    // handle error
 	if(err){
 		if(err.CODE){
 			console.log(err);
 		}
 	}else{
 		fs.close(fd, function (err, res) {
-			// handle error
 			if(err)
 			console.log(err);
 		});
