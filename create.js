@@ -19,6 +19,7 @@ fs.open(filePath, "wx", function (err, fd) {
 			console.log(err);
 		}
 	}else{
+		console.log("file successfully created");
 		fs.close(fd, function (err, res) {
 			if(err)
 			console.log(err);
