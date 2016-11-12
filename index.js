@@ -46,7 +46,7 @@ function interpreterList(){
 function getNextItemInfo(){
 	currentItemWaittingForStat++;
 	if(currentItemWaittingForStat < fileNames.length){
-		var file = path.resolve(__dirname, fileNames[currentItemWaittingForStat]);
+		var file = path.resolve('.', fileNames[currentItemWaittingForStat]);
 		fs.stat(file, interpreterItem);
 	}
 }
@@ -78,6 +78,7 @@ function interpreterItem(err, res){
 		}
 	}else{
 		console.log("unrecognized or already deleted");
+		console.log(err.message);
 		getNextItemInfo();
 	}
 }
