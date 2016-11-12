@@ -78,7 +78,6 @@ function interpreterItem(err, res){
 		}
 	}else{
 		console.log("unrecognized or already deleted");
-		console.log(err.message);
 		getNextItemInfo();
 	}
 }
